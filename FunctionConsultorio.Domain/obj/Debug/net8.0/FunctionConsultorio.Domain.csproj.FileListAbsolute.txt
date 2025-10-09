@@ -1,0 +1,13 @@
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\bin\Debug\net8.0\FunctionConsultorio.Domain.deps.json
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\bin\Debug\net8.0\FunctionConsultorio.Domain.dll
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\bin\Debug\net8.0\FunctionConsultorio.Domain.pdb
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\obj\Debug\net8.0\FunctionConsultorio.Domain.csproj.AssemblyReference.cache
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\obj\Debug\net8.0\FunctionConsultorio.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\obj\Debug\net8.0\FunctionConsultorio.Domain.AssemblyInfoInputs.cache
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\obj\Debug\net8.0\FunctionConsultorio.Domain.AssemblyInfo.cs
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\obj\Debug\net8.0\FunctionConsultorio.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\obj\Debug\net8.0\FunctionConsultorio.Domain.sourcelink.json
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\obj\Debug\net8.0\FunctionConsultorio.Domain.dll
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\obj\Debug\net8.0\refint\FunctionConsultorio.Domain.dll
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\obj\Debug\net8.0\FunctionConsultorio.Domain.pdb
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Domain\obj\Debug\net8.0\ref\FunctionConsultorio.Domain.dll

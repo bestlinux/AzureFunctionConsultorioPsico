@@ -1,0 +1,16 @@
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\obj\Debug\net8.0\FunctionConsultorio.Application.csproj.AssemblyReference.cache
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\obj\Debug\net8.0\FunctionConsultorio.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\obj\Debug\net8.0\FunctionConsultorio.Application.AssemblyInfoInputs.cache
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\obj\Debug\net8.0\FunctionConsultorio.Application.AssemblyInfo.cs
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\obj\Debug\net8.0\FunctionConsultorio.Application.csproj.CoreCompileInputs.cache
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\obj\Debug\net8.0\FunctionConsultorio.Application.sourcelink.json
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\bin\Debug\net8.0\FunctionConsultorio.Application.deps.json
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\bin\Debug\net8.0\FunctionConsultorio.Application.dll
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\bin\Debug\net8.0\FunctionConsultorio.Application.pdb
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\bin\Debug\net8.0\FunctionConsultorio.Domain.dll
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\bin\Debug\net8.0\FunctionConsultorio.Domain.pdb
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\obj\Debug\net8.0\Function.867314F1.Up2Date
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\obj\Debug\net8.0\FunctionConsultorio.Application.dll
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\obj\Debug\net8.0\refint\FunctionConsultorio.Application.dll
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\obj\Debug\net8.0\FunctionConsultorio.Application.pdb
+C:\Users\bestl\OneDrive\projetocida\AzureFunctionConsultorioPsico\FunctionConsultorio.Application\obj\Debug\net8.0\ref\FunctionConsultorio.Application.dll
