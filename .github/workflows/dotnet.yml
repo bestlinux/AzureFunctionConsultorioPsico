@@ -21,6 +21,6 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore ConsultorioFunctions.sln
+      run: dotnet restore ./ConsultorioFunctions/ConsultorioFunctions.sln
     - name: Build
-      run: dotnet build ConsultorioFunctions.sln --no-restore
+      run: dotnet build ./ConsultorioFunctions/ConsultorioFunctions.sln --no-restore
