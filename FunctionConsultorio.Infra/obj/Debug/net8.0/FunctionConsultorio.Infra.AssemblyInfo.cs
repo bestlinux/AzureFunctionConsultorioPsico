@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FunctionConsultorio.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67967834c4cf58f0a827045abcf95abf255e73a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15c86e4a668a009bbbfb1e7b4e2413bdcb6832b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("FunctionConsultorio.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FunctionConsultorio.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

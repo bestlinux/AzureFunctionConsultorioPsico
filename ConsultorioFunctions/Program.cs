@@ -21,6 +21,16 @@ builder.Services.ConfigurePersistenceApp(builder.Configuration);
 builder.Services.ConfigureEmail(builder.Configuration);
 builder.Services.ConfigureApplicationApp();
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+      policy =>
+      {
+          policy.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+      });
+});
 
 builder.ConfigureFunctionsWebApplication();
 
