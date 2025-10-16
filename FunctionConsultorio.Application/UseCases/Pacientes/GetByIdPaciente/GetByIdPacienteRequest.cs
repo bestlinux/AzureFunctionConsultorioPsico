@@ -8,8 +8,5 @@ using System.Threading.Tasks;
 
 namespace FunctionConsultorio.Application.UseCases.Pacientes.GetByIdPaciente
 {
-    public class GetByIdPacienteRequest : IRequest<GetByIdPacienteResponse>
-    {
-        public int Id { get; set; }
-    }
+    public sealed record GetByIdPacienteRequest(int Id) : IRequest<GetByIdPacienteResponse> { };
 }

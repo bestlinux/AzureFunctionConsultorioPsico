@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FunctionConsultorio.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15c86e4a668a009bbbfb1e7b4e2413bdcb6832b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+761e35e087fa496d274508ad7a9cd3074e58a7ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("FunctionConsultorio.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FunctionConsultorio.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.Azure.Functions.Worker.Http;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -11,6 +12,24 @@ namespace ConsultorioFunctions
 {
     public static class TokenValidation
     {
+        public static bool UnauthorizedResponse(HttpRequestData req, out string message)
+        {
+            message = string.Empty;
+
+            if (!req.Headers.TryGetValues("Authorization", out var authHeader))
+            {
+                message = "Missing Authorization header.";
+                return false;
+            }
+            if (!TokenValidation.ValidateToken(authHeader.FirstOrDefault()!))
+            {
+                message = "Invalid or expired token.";
+                return false;
+            }
+
+            return true;
+        }
+
         public static bool ValidateToken(string tokenReq)
         {
             var tokenValidationParameters = new TokenValidationParameters

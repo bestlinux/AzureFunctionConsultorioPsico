@@ -8,8 +8,5 @@ using System.Threading.Tasks;
 
 namespace FunctionConsultorio.Application.UseCases.Pacientes.DeletePaciente
 {
-    public class DeletePacienteRequest : IRequest<DeletePacienteResponse>
-    {
-        public int Id { get; set; }
-    }
+    public sealed record DeletePacienteRequest(int Id) : IRequest<DeletePacienteResponse> { };
 }
