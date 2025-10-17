@@ -43,7 +43,7 @@ namespace FunctionConsultorio.Application.UseCases.Pacientes.GetAllPaciente
         //MENSAL
         //AVULSO
         //GRATUITO
-        public int TipoPagamento { get; set; }
+        public string? TipoPagamento { get; set; }
 
         public double? ValorSessao { get; set; }
 

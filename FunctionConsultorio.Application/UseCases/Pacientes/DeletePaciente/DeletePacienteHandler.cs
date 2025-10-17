@@ -51,7 +51,7 @@ namespace FunctionConsultorio.Application.UseCases.Pacientes.DeletePaciente
                 List<ErrorItem> errorsList = new();
                 ErrorItem errorItem = new()
                 {
-                    Message = ex.InnerException.Message
+                    Message = ex.Message
                 };
                 errorsList.Add(errorItem);
                 errorDto.Errors = errorsList;

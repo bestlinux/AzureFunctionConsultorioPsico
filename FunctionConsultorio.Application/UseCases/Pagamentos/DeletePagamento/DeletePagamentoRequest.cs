@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using FunctionConsultorio.Application.UseCases.Pacientes.DeletePaciente;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,5 @@ using System.Threading.Tasks;
 
 namespace FunctionConsultorio.Application.UseCases.Pagamentos.DeletePagamento
 {
-    public class DeletePagamentoRequest : IRequest<bool>
-    {
-        public int Id { get; set; }
-    }
+    public sealed record DeletePagamentoRequest(int Id) : IRequest<bool> { };
 }
