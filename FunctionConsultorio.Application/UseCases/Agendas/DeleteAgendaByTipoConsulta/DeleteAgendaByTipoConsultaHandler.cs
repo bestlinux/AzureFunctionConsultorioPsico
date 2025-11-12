@@ -1,7 +1,8 @@
-﻿using FunctionConsultorio.Application.Services.Notifications;
+﻿using AutoMapper;
+using FunctionConsultorio.Application.Services.Notifications;
 using FunctionConsultorio.Application.UseCases.Agendas.DeleteAgenda;
+using FunctionConsultorio.Domain.Entities;
 using FunctionConsultorio.Domain.Interfaces;
-using AutoMapper;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace FunctionConsultorio.Application.UseCases.Agendas.DeleteAgendaByTipoConsulta
 {
-    public class DeleteAgendaByTipoConsultaHandler : IRequestHandler<DeleteAgendaByTipoConsultaRequest, bool>
+    public class DeleteAgendaByTipoConsultaHandler : IRequestHandler<DeleteAgendaByTipoConsultaRequest, DeleteAgendaResponse>
     {
         private readonly IAgendaRepository _agendaRepository;
         private readonly IMediator _mediator;
@@ -23,22 +24,38 @@ namespace FunctionConsultorio.Application.UseCases.Agendas.DeleteAgendaByTipoCon
             _mediator = mediator;
         }
 
-        public async Task<bool> Handle(DeleteAgendaByTipoConsultaRequest request, CancellationToken cancellationToken)
+        public async Task<DeleteAgendaResponse> Handle(DeleteAgendaByTipoConsultaRequest request, CancellationToken cancellationToken)
         {
+            DeleteAgendaResponse deleteAgenteResponse = new();
+
             try
             {
                 await _agendaRepository.DeletaTodosAgendamentosPorTipoConsulta(request.TipoConsulta);
 
-                return true;
+                deleteAgenteResponse.Success = true;
+
+                return deleteAgenteResponse;
             }
             catch (Exception ex)
             {
                 await _mediator.Publish(new ErrorNotification
                 {
-                    Error = "Ocorreu um erro ao excluir a agenda de tipo de consulta " + request.TipoConsulta,
+                    Error = "Ocorreu um erro ao excluir a agenda de id " + request.TipoConsulta,
                     Stack = ex.StackTrace,
                 }, cancellationToken);
-                return false;
+                deleteAgenteResponse.Success = false;
+                ErrorDto errorDto = new();
+                List<ErrorItem> errorsList = new();
+                ErrorItem errorItem = new()
+                {
+                    Message = ex.Message
+                };
+                errorsList.Add(errorItem);
+                errorDto.Errors = errorsList;
+                errorDto.Title = "Erro ao excluir a agenda " + request.TipoConsulta;
+                deleteAgenteResponse.Error = errorDto;
+
+                return deleteAgenteResponse;
             }
         }
     }

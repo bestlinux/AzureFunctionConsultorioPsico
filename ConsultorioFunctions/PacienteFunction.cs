@@ -35,6 +35,7 @@ public class PacienteFunction
         _logger = logger;
         _mediator = mediator;
     }
+
     [Function("UpdatePaciente")]
     public async Task<HttpResponseData> UpdatePaciente([HttpTrigger(AuthorizationLevel.Function, "put", Route = "UpdatePaciente")] HttpRequestData req, [Microsoft.Azure.Functions.Worker.Http.FromBody] UpdatePacienteRequest pacienteRequest, CancellationToken cancellationToken)
     {

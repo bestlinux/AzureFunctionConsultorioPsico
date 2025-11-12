@@ -1,5 +1,4 @@
-﻿using FunctionConsultorio.Application.UseCases.Pacientes.DeletePaciente;
-using MediatR;
+﻿using FunctionConsultorio.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,5 +7,9 @@ using System.Threading.Tasks;
 
 namespace FunctionConsultorio.Application.UseCases.Agendas.DeleteAgenda
 {
-    public sealed record DeleteAgendaRequest(int Id) : IRequest<DeleteAgendaResponse> { };
+    public sealed record DeleteAgendaResponse
+    {
+        public bool? Success { get; set; }
+        public ErrorDto Error { get; set; }
+    }
 }

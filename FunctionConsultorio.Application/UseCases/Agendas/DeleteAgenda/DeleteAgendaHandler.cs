@@ -1,7 +1,8 @@
-﻿using FunctionConsultorio.Application.Services.Notifications;
+﻿using AutoMapper;
+using FunctionConsultorio.Application.Services.Notifications;
 using FunctionConsultorio.Application.UseCases.Pacientes.DeletePaciente;
+using FunctionConsultorio.Domain.Entities;
 using FunctionConsultorio.Domain.Interfaces;
-using AutoMapper;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace FunctionConsultorio.Application.UseCases.Agendas.DeleteAgenda
 {
-    public class DeleteAgendaHandler : IRequestHandler<DeleteAgendaRequest, bool>
+    public class DeleteAgendaHandler : IRequestHandler<DeleteAgendaRequest, DeleteAgendaResponse>
     {
         private readonly IAgendaRepository _agendaRepository;
         private readonly IMediator _mediator;
@@ -24,13 +25,17 @@ namespace FunctionConsultorio.Application.UseCases.Agendas.DeleteAgenda
             _mediator = mediator;
         }
 
-        public async Task<bool> Handle(DeleteAgendaRequest request, CancellationToken cancellationToken)
+        public async Task<DeleteAgendaResponse> Handle(DeleteAgendaRequest request, CancellationToken cancellationToken)
         {
+            DeleteAgendaResponse deleteAgenteResponse = new();
+
             try
             {
                 await _agendaRepository.RemoveAsync(request.Id);
 
-                return true;
+                deleteAgenteResponse.Success = true;
+
+                return deleteAgenteResponse;
             }
             catch (Exception ex)
             {
@@ -39,7 +44,19 @@ namespace FunctionConsultorio.Application.UseCases.Agendas.DeleteAgenda
                     Error = "Ocorreu um erro ao excluir a agenda de id " + request.Id,
                     Stack = ex.StackTrace,
                 }, cancellationToken);
-                return false;
+                deleteAgenteResponse.Success = false;
+                ErrorDto errorDto = new();
+                List<ErrorItem> errorsList = new();
+                ErrorItem errorItem = new()
+                {
+                    Message = ex.Message
+                };
+                errorsList.Add(errorItem);
+                errorDto.Errors = errorsList;
+                errorDto.Title = "Erro ao excluir a agenda " + request.Id;
+                deleteAgenteResponse.Error = errorDto;
+
+                return deleteAgenteResponse;
             }
         }
     }
