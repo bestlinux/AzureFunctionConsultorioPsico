@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FunctionConsultorio.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6265e2407662a339da4adfe72763b149b70be37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a9660114571710a1412f8009aea387b8eb46899")]
 [assembly: System.Reflection.AssemblyProductAttribute("FunctionConsultorio.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FunctionConsultorio.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
